@@ -17,6 +17,12 @@ class Program
     private static (int sum, int count) Tally(int[] numbers)
     {
         var r = (s: 0, c: 0);
+
+        foreach (var v in numbers)
+        {
+            r.s += v; r.c++;
+        }
+
         return r;
     }
 }
