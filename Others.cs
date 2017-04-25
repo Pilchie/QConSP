@@ -11,8 +11,7 @@ class Others
 
         if (obj is string s)
         {
-            int i;
-            return int.TryParse(s, out i) ? i : -1;
+            return int.TryParse(s, out var i) ? i : -1;
         }
         else if (obj is int i)
         {
