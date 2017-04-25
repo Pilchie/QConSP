@@ -18,9 +18,11 @@ class Program
     {
         var r = (s: 0, c: 0);
 
+        void Add(int s, int c) { r.s += s;r.c += c; }
+
         foreach (var v in numbers)
         {
-            r.s += v; r.c++;
+            Add(v, 1);
         }
 
         return r;
