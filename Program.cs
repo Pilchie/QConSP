@@ -11,10 +11,10 @@ class Program
         };
 
         var t = Tally(numbers);
-        WriteLine($"The count is {t.Item1}, and the sum is {t.Item2}.");
+        WriteLine($"The count is {t.sum}, and the sum is {t.count}.");
     }
 
-    private static (int, int) Tally(int[] numbers)
+    private static (int sum, int count) Tally(int[] numbers)
     {
         throw new NotImplementedException();
     }
