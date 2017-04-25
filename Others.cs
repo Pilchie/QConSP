@@ -9,15 +9,14 @@ class Others
     {
         await Task.Delay(TimeSpan.FromSeconds(1));
 
-        var s = obj as string;
-        if (s != null)
+        if (obj is string s)
         {
             int i;
             return int.TryParse(s, out i) ? i : -1;
         }
-        else if (obj is int)
+        else if (obj is int i)
         {
-            return (int)obj;
+            return i;
         }
         else
         {
