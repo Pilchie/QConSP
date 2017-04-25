@@ -16,6 +16,7 @@ class Program
 
     private static (int sum, int count) Tally(int[] numbers)
     {
-        throw new NotImplementedException();
+        var r = (s: 0, c: 0);
+        return r;
     }
 }
