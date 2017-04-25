@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 class Others
 {
     async ValueTask<int> ProcessAsync(object obj,
-        CancellationToken cancellationToken = default(CancellationToken))
+        CancellationToken cancellationToken = default)
     {
         await Task.Delay(TimeSpan.FromSeconds(1));
 
